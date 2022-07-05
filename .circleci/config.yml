@@ -30,10 +30,10 @@ jobs:
     <<: *defaults
     steps:
       - checkout
-      - run: npm run audit
+      - run: npm audit
 
 workflows:
-  say-hello-workflow:
+  workflow:
     jobs:
       - build
       - test:
